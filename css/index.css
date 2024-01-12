@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Lato&family=Space+Grotesk:wght@400;500&family=Work+Sans:wght@400;600;700&display=swap');
+
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-pink: hsl(275, 100%, 97%);
+    --Grayish-purple: hsl(292, 16%, 49%);
+    --Dark-purple: hsl(292, 42%, 14%);   
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+body {
+    background-image: url("../assets/images/background-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-color: var(--Light-pink);
+    background-position-y: -45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    
+    
+    
+}
+
+.cabecera {
+    display: flex;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.cabecera .estrella {
+    max-width: 2rem;
+}
+
+h1 {
+    color: var(--Dark-purple);
+    scale: 1.2;
+}
+
+h5 {
+    font-weight: 600;
+    color: var(--Dark-purple);
+}
+
+h5:hover {
+    cursor: pointer;
+    color: rgb(197, 36, 197);
+}
+
+
+    
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: var(--White);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: -1px -1px 1rem 2px var(--Grayish-purple);
+}
+
+p {
+    font-size: 0.75rem;
+    color: var(--Grayish-purple);
+    font-weight: 500;
+    
+}
+
+.titulo-preguntas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.titulo-texto {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cuadro-preguntas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(212, 212, 212, 0.185);
+}
+
+@media screen and (max-width: 1080px) {
+    .contenedor {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .contenedor {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .contenedor {
+        width: 75%;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .contenedor {
+        width: 85%;
+    }
+    
+    .cabecera .estrella {
+        max-width: 1.3rem;
+    }
+
+    .cabecera .faqs {
+        font-size: 1.4rem;
+    }
+
+    h5 {
+        font-size: 0.8rem;
+    }
+
+    p {
+        font-size: .7rem
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.disabled {
+    display: none;
+}
